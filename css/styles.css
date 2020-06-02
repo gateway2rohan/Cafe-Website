@@ -1,0 +1,120 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    /* box-sizing: border-box; */
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../static/bake-baked-bakery-1028714.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+body{
+    color: white;
+    font-size: 20px;
+    font-family: 'Flamenco', cursive;
+}
+
+.clearfix::after{
+    content: "";
+    visibility: hidden;
+    display: block;
+    clear: both;
+}
+
+.row{
+    max-width: 1180px;
+    margin: auto;
+    
+} 
+
+.logo{
+    height:120px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.main-nav{
+    float: right;
+    margin-top: 60px;
+}
+.main-nav li{
+    display: inline;
+    list-style: none;
+    margin: 40px;
+    
+}
+
+.main-nav li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 90%;
+    padding: 5px 0;
+}
+
+.main-nav li a:hover{
+    border-bottom: 1px solid #bf55ec;
+}
+
+.main-content-header{
+    width: 1180px;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+}
+
+h1{
+    color: #fff;
+    font-size: 240%;
+    word-spacing: 5px;
+    letter-spacing: 3px;
+    margin-bottom: 25px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+.btn{
+    display: inline;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: lighter;
+    color: #fff;
+    border-radius:200px;
+    /* transition: background-color 0.2s, border 0.2s, color 0.2; */
+}
+
+.order-btn{
+    border:1px solid #bf55ec;
+    color: #bf55ec;
+    margin-right: 15px;
+}
+
+.order-btn:hover{
+    background-color: #fff;
+}
+
+.show-more-btn{
+    border:1px solid #fff;
+}
+
+.show-more-btn:hover{
+    background-color: #bf55ec;
+}
+
+.animate-class{
+    animation: color-change 1s infinite;
+}
+
+@keyframes color-change{
+    0%{color: pink}
+    25%{color: #fff}
+    50%{color: #bf55ec}
+    100%{color:plum}
+}
